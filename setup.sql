@@ -123,11 +123,3 @@ CREATE INDEX idx_status_updates_task_id ON status_updates(task_id);
 CREATE INDEX idx_attachments_task_id ON attachments(task_id);
 CREATE INDEX idx_projects_manager_id ON projects(manager_id);
 CREATE INDEX idx_departments_head_of_dept_id ON departments(head_of_dept_id);
-
--- Enable Row Level Security (RLS)
-ALTER TABLE users ENABLE ROW LEVEL SECURITY;
-ALTER TABLE tasks ENABLE ROW LEVEL SECURITY;
-ALTER TABLE projects ENABLE ROW LEVEL SECURITY;
-ALTER TABLE comments ENABLE ROW LEVEL SECURITY;
-ALTER TABLE attachments ENABLE ROW LEVEL SECURITY;
-ALTER TABLE status_updates ENABLE ROW LEVEL SECURITY;
